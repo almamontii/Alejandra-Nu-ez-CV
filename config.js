@@ -11,7 +11,6 @@ const CV_CONFIG = {
         summary: "Trabajadora social comprometida con el bienestar de las personas y comunidades. Especializada en intervención social, acompañamiento familiar y desarrollo comunitario. Con experiencia en programas sociales y políticas públicas orientadas a la inclusión y el desarrollo humano.",
         email: "veronicanunez466@gmail.com",
         phone: "1531122277",
-        phone2: "Teléfono: 40066600",
         birthdate: "Fecha Nacimiento: 30/10/1983",
         address: "Dirección: Vicente López, Olivos",
         dni: "DNI: 30440908",

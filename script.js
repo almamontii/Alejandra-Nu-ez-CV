@@ -51,7 +51,6 @@ function populateCV() {
     document.getElementById('subtitle').textContent = cvData.personal.subtitle;
     document.getElementById('email').textContent = cvData.personal.email;
     document.getElementById('phone').textContent = cvData.personal.phone;
-    document.getElementById('phone2').textContent = cvData.personal.phone2;
     document.getElementById('birthdate').textContent = cvData.personal.birthdate;
     document.getElementById('address').textContent = cvData.personal.address;
     document.getElementById('dni').textContent = cvData.personal.dni;
