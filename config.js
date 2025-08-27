@@ -53,7 +53,7 @@ const CV_CONFIG = {
         },
         {
             title: "Operadora de sector de alarmas de seguridad",
-            company: "Secretaria",
+            company: "Municipalidad de Vicente López",
             period: "",
             achievements: []
         }
