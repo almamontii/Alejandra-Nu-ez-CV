@@ -47,6 +47,7 @@ const CV_CONFIG = {
                 "Atención al público en concesiones del estadio",
                 "Camarera en sector VIP",
                 "Cajera",
+                "Control de stock y manejo de inventario",
                 "Teléfonos: 40066600"
             ]
         }
