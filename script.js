@@ -74,7 +74,7 @@ function populateCV() {
 function populateExperience() {
     const experienceList = document.getElementById('experience-list');
     experienceList.innerHTML = '';
-
+    
     cvData.experience.forEach(exp => {
         const item = document.createElement('div');
         item.className = 'experience-item';
@@ -84,6 +84,11 @@ function populateExperience() {
                 <span class="period">${exp.period}</span>
             </div>
             <span class="company">${exp.company}</span>
+            ${exp.achievements && exp.achievements.length > 0 ? `
+                <ul class="achievements">
+                    ${exp.achievements.map(achievement => `<li>${achievement}</li>`).join('')}
+                </ul>
+            ` : ''}
         `;
         experienceList.appendChild(item);
     });

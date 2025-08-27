@@ -22,7 +22,22 @@ const CV_CONFIG = {
     // ========================================
     // EXPERIENCIA PROFESIONAL
     // ========================================
-    experience: [],
+    experience: [
+        {
+            title: "Supervisora",
+            company: "La Juvenil - Casa Gastronómica de Pastas",
+            period: "Abril 2021 - Actualidad",
+            achievements: [
+                "Pago a proveedores",
+                "Manejo de caja",
+                "Control de stock",
+                "Manejo de inventarios",
+                "Manejo de ficha de personal",
+                "Capacitación de personal a cargo",
+                "Selección de personal"
+            ]
+        }
+    ],
 
     // ========================================
     // EDUCACIÓN
