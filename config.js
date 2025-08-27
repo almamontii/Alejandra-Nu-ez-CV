@@ -69,7 +69,14 @@ const CV_CONFIG = {
             title: "Pastas Elbita",
             company: "Especialista en gastronomía",
             period: "Abril 2009 - Abril 2013",
-            achievements: []
+            achievements: [
+                "Atención al público",
+                "Atención telefónica",
+                "Atención de proveedores",
+                "Facturación y pagos",
+                "Coordinación de servicio delivery",
+                "Dirección: Córdoba 769, Martínez"
+            ]
         }
     ],
 
