@@ -275,10 +275,12 @@ body {
     bottom: 2rem;
     right: 2rem;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .btn-print {
-    background: #000;
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -291,9 +293,24 @@ body {
     gap: 0.5rem;
     transition: all 0.2s ease;
     font-family: inherit;
+    min-width: 140px;
+    justify-content: center;
 }
 
-.btn-print:hover {
+.btn-pdf {
+    background: #dc2626;
+}
+
+.btn-pdf:hover {
+    background: #b91c1c;
+    transform: translateY(-1px);
+}
+
+.btn-print-secondary {
+    background: #000;
+}
+
+.btn-print-secondary:hover {
     background: #333;
     transform: translateY(-1px);
 }
@@ -384,35 +401,160 @@ body {
 
 /* Print Styles */
 @media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    @page {
+        size: A4;
+        margin: 0.5in;
+    }
+
     body {
         background: white;
-        font-size: 12px;
+        font-size: 11px;
+        line-height: 1.4;
+        color: #000;
     }
 
     .container {
         box-shadow: none;
         max-width: none;
+        min-height: auto;
         grid-template-columns: 1fr 2fr;
+        gap: 1.5rem;
+        background: white;
     }
 
     .left-column {
         background: #f8f9fa !important;
-        -webkit-print-color-adjust: exact;
-        color-adjust: exact;
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        padding: 1.5rem 1rem;
+    }
+
+    .right-column {
+        padding: 1.5rem 1rem;
     }
 
     .print-button,
     .footer {
-        display: none;
+        display: none !important;
     }
 
     .section {
         page-break-inside: avoid;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: #000 !important;
+    }
+
+    .section-title::after {
+        background: #000 !important;
     }
 
     .skills-container {
         grid-template-columns: 1fr 1fr;
+        gap: 1rem;
     }
+
+    .profile-photo-4x4 img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .name {
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .professional-title h2 {
+        font-size: 1rem;
+    }
+
+    .professional-title p {
+        font-size: 0.85rem;
+    }
+
+    .contact-item {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .education-item,
+    .experience-item {
+        margin-bottom: 1rem;
+        page-break-inside: avoid;
+    }
+
+    .degree,
+    .job-title {
+        font-size: 0.9rem;
+    }
+
+    .period {
+        font-size: 0.8rem;
+    }
+
+    .institution,
+    .company,
+    .title {
+        font-size: 0.85rem;
+    }
+
+    .skill-item {
+        font-size: 0.8rem;
+    }
+
+    .language-item {
+        padding: 0.4rem 0;
+    }
+
+    .language-name {
+        font-size: 0.85rem;
+    }
+
+    .language-level {
+        font-size: 0.8rem;
+    }
+
+    /* Ensure colors are preserved */
+    .contact-item i {
+        color: #666 !important;
+    }
+
+    .section-title {
+        color: #000 !important;
+    }
+
+    .left-column {
+        color: #333 !important;
+    }
+}
+
+/* PDF Mode Optimization */
+.pdf-mode {
+    background: white !important;
+}
+
+.pdf-mode .container {
+    background: white !important;
+    box-shadow: none !important;
+}
+
+.pdf-mode .print-button {
+    display: none !important;
+}
+
+.pdf-mode .footer {
+    display: none !important;
 }
 
 /* Animation for smooth loading */

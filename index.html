@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Profesional</title>
+    <meta name="print-color-adjust" content="exact">
+    <meta name="color-scheme" content="light">
+    <title>CV Profesional - Alejandra Veronica Nuñez</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -106,9 +108,13 @@
         <span class="footer-text">;)</span>
     </div>
 
-    <!-- Print Button -->
+    <!-- Print/Download Buttons -->
     <div class="print-button">
-        <button onclick="window.print()" class="btn-print">
+        <button onclick="downloadAsPDF()" class="btn-print btn-pdf">
+            <i class="fas fa-file-pdf"></i>
+            Descargar PDF
+        </button>
+        <button onclick="printCV()" class="btn-print btn-print-secondary">
             <i class="fas fa-print"></i>
             Imprimir
         </button>

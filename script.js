@@ -252,24 +252,73 @@ function showNotification(message) {
     }, 3000);
 }
 
-// Export CV as PDF (if jsPDF is available)
-function exportToPDF() {
-    if (typeof window.jsPDF !== 'undefined') {
-        const { jsPDF } = window.jsPDF;
-        const doc = new jsPDF();
+// Download CV as PDF using browser's print to PDF functionality
+function downloadAsPDF() {
+    // Add a class to optimize for PDF generation
+    document.body.classList.add('pdf-mode');
 
-        // Add content to PDF
-        doc.setFontSize(20);
-        doc.text(cvData.personal.name, 20, 20);
+    // Hide the print buttons temporarily
+    const printButton = document.querySelector('.print-button');
+    if (printButton) {
+        printButton.style.display = 'none';
+    }
 
-        doc.setFontSize(12);
-        doc.text(cvData.personal.title, 20, 30);
-
-        // Save the PDF
-        doc.save('cv-profesional.pdf');
-    } else {
-        // Fallback to print
+    // Use the browser's print dialog with PDF as default
+    setTimeout(() => {
         window.print();
+
+        // Restore after print dialog
+        setTimeout(() => {
+            document.body.classList.remove('pdf-mode');
+            if (printButton) {
+                printButton.style.display = 'flex';
+            }
+        }, 1000);
+    }, 100);
+}
+
+// Standard print function
+function printCV() {
+    window.print();
+}
+
+// Enhanced PDF export with html2pdf (if available)
+function exportToPDF() {
+    if (typeof window.html2pdf !== 'undefined') {
+        const element = document.querySelector('.container');
+        const opt = {
+            margin: 0.5,
+            filename: 'CV-Alejandra-Veronica-Nunez.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: {
+                scale: 2,
+                useCORS: true,
+                letterRendering: true,
+                backgroundColor: '#ffffff'
+            },
+            jsPDF: {
+                unit: 'in',
+                format: 'a4',
+                orientation: 'portrait',
+                compress: true
+            }
+        };
+
+        // Hide print buttons
+        const printButton = document.querySelector('.print-button');
+        if (printButton) {
+            printButton.style.display = 'none';
+        }
+
+        html2pdf().set(opt).from(element).save().then(() => {
+            // Restore print buttons
+            if (printButton) {
+                printButton.style.display = 'flex';
+            }
+        });
+    } else {
+        // Fallback to browser print
+        downloadAsPDF();
     }
 }
 
