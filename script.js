@@ -71,6 +71,9 @@ function populateCV() {
 
     // Languages
     populateLanguages();
+
+    // Computer Skills
+    populateComputerSkills();
 }
 
 // Populate Experience Section
@@ -147,6 +150,23 @@ function populatePersonalActivities() {
             activityItem.className = 'skill-item';
             activityItem.textContent = activity;
             personalActivities.appendChild(activityItem);
+        });
+    }
+}
+
+// Populate Computer Skills Section
+function populateComputerSkills() {
+    const computerSkills = document.getElementById('computer-skills');
+
+    computerSkills.innerHTML = '';
+
+    // Computer Skills
+    if (cvData.computerSkills) {
+        cvData.computerSkills.forEach(skill => {
+            const skillItem = document.createElement('span');
+            skillItem.className = 'skill-item';
+            skillItem.textContent = skill;
+            computerSkills.appendChild(skillItem);
         });
     }
 }
