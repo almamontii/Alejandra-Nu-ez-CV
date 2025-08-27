@@ -64,6 +64,12 @@ const CV_CONFIG = {
                 "Dirección: Maipú 2609, Olivos",
                 "Teléfono: 47112800"
             ]
+        },
+        {
+            title: "Pastas Elbita",
+            company: "Especialista en gastronomía",
+            period: "",
+            achievements: []
         }
     ],
 
