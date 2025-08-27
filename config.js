@@ -34,7 +34,8 @@ const CV_CONFIG = {
                 "Manejo de inventarios",
                 "Manejo de ficha de personal",
                 "Capacitación de personal a cargo",
-                "Selección de personal"
+                "Selección de personal",
+                "Resolución de conflictos"
             ]
         }
     ],
