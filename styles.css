@@ -452,11 +452,12 @@ body {
     }
 
     .left-column {
-        background: #f8f9fa !important;
+        background: #e6b17a !important;
         -webkit-print-color-adjust: exact !important;
         color-adjust: exact !important;
         print-color-adjust: exact !important;
         padding: 1.5rem 1rem;
+        color: white !important;
     }
 
     .right-column {

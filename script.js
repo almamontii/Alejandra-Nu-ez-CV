@@ -288,6 +288,9 @@ function showNotification(message) {
 
 // Download CV as PDF using browser's print to PDF functionality
 function downloadAsPDF() {
+    // Ensure all content is loaded first
+    populateCV();
+    
     // Add a class to optimize for PDF generation
     document.body.classList.add('pdf-mode');
 
@@ -297,7 +300,7 @@ function downloadAsPDF() {
         printButton.style.display = 'none';
     }
 
-    // Use the browser's print dialog with PDF as default
+    // Wait a bit more to ensure all content is rendered
     setTimeout(() => {
         window.print();
 
@@ -308,7 +311,7 @@ function downloadAsPDF() {
                 printButton.style.display = 'flex';
             }
         }, 1000);
-    }, 100);
+    }, 500);
 }
 
 // Standard print function
