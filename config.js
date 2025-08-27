@@ -42,7 +42,11 @@ const CV_CONFIG = {
             title: "Especialistas en Gastronomía de Eventos",
             company: "Compass Group - Predio Movistar Arena",
             period: "Noviembre 2019 - Febrero 2020",
-            achievements: []
+            achievements: [
+                "Atención al público en concesiones del estadio",
+                "Camarera en sector VIP",
+                "Cajera"
+            ]
         }
     ],
 
