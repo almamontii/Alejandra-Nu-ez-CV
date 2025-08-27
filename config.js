@@ -65,7 +65,7 @@ const CV_CONFIG = {
             title: "Dictado por la Municipalidad de Vicente López"
         },
         {
-            degree: "Ceremonia y Protocolo",
+            degree: "Ceremonial",
             institution: "",
             period: "2017",
             title: "Dictado por la Municipalidad de Vicente López"
