@@ -143,6 +143,16 @@ const CV_CONFIG = {
     },
 
     // ========================================
+    // ACTIVIDADES PERSONALES
+    // ========================================
+    personalActivities: [
+        "Canto",
+        "Principiante en realización de alimentos sin TACC",
+        "Organizadora de Eventos Culturales",
+        "Esteticista recibida"
+    ],
+
+    // ========================================
     // IDIOMAS
     // ========================================
     languages: [],

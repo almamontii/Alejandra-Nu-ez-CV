@@ -66,6 +66,9 @@ function populateCV() {
     // Skills
     populateSkills();
 
+    // Personal Activities
+    populatePersonalActivities();
+
     // Languages
     populateLanguages();
 }
@@ -127,6 +130,23 @@ function populateSkills() {
             skillItem.className = 'skill-item';
             skillItem.textContent = skill;
             softSkills.appendChild(skillItem);
+        });
+    }
+}
+
+// Populate Personal Activities Section
+function populatePersonalActivities() {
+    const personalActivities = document.getElementById('personal-activities');
+
+    personalActivities.innerHTML = '';
+
+    // Personal Activities
+    if (cvData.personalActivities) {
+        cvData.personalActivities.forEach(activity => {
+            const activityItem = document.createElement('span');
+            activityItem.className = 'skill-item';
+            activityItem.textContent = activity;
+            personalActivities.appendChild(activityItem);
         });
     }
 }
