@@ -46,7 +46,8 @@ const CV_CONFIG = {
             achievements: [
                 "Atención al público en concesiones del estadio",
                 "Camarera en sector VIP",
-                "Cajera"
+                "Cajera",
+                "Teléfonos: 40066600"
             ]
         }
     ],
