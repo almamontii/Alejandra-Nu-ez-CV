@@ -133,7 +133,13 @@ const CV_CONFIG = {
     // HABILIDADES
     // ========================================
     skills: {
-        "Personales": []
+        "Personales": [
+            "Buenas relaciones interpersonales",
+            "Escucha activa",
+            "Capacidad organizativa de trabajo grupal",
+            "Permanente colaboración y disposición",
+            "Pro-activa"
+        ]
     },
 
     // ========================================
