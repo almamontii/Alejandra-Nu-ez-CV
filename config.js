@@ -130,14 +130,10 @@ const CV_CONFIG = {
     ],
 
     // ========================================
-    // HABILIDADES TÉCNICAS
+    // HABILIDADES
     // ========================================
     skills: {
-        "Personales": [
-            "Canto",
-            "Principiante en realización de alimentos sin TACC",
-            "Organizadora de Eventos Culturales"
-        ]
+        "Personales": []
     },
 
     // ========================================
