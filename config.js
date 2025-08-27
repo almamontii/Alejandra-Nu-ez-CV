@@ -50,6 +50,12 @@ const CV_CONFIG = {
                 "Cajera",
                 "Teléfonos: 40066600"
             ]
+        },
+        {
+            title: "Operadora de sector de alarmas de seguridad",
+            company: "Secretaria",
+            period: "",
+            achievements: []
         }
     ],
 
