@@ -136,9 +136,9 @@ const CV_CONFIG = {
         "Técnicas": [],
         "Personales": [
             "Canto",
-            "Esteticista recibida",
             "Principiante en realización de alimentos sin TACC",
-            "Organizadora de Eventos Culturales"
+            "Organizadora de Eventos Culturales",
+            "Esteticista recibida"
         ]
     },
 
