@@ -55,7 +55,17 @@ function populateCV() {
     document.getElementById('address').textContent = cvData.personal.address;
     document.getElementById('dni').textContent = cvData.personal.dni;
     document.getElementById('marital-status').textContent = cvData.personal.maritalStatus;
-    document.getElementById('profile-photo').src = cvData.personal.photo;
+    // Set photo src, but handle potential file:// issues
+    const photoElement = document.getElementById('profile-photo');
+    const photoSrc = cvData.personal.photo;
+    
+    // Only set src if it's not a file:// URL or if we're not in a file context
+    if (!photoSrc.startsWith('file://') && photoSrc !== '') {
+        photoElement.src = photoSrc;
+    } else if (photoSrc.includes('PHOTO-Ale.jpg')) {
+        // Use relative path without file:// prefix
+        photoElement.src = 'PHOTO-Ale.jpg';
+    }
 
     // Experience
     populateExperience();
