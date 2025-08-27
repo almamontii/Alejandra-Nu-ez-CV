@@ -432,7 +432,7 @@ body {
 
     @page {
         size: A4;
-        margin: 0.2in;
+        margin: 0.3in;
     }
 
     body {
@@ -452,17 +452,43 @@ body {
         page-break-after: auto;
     }
 
+    /* Control de saltos de página para distribución en 2 páginas */
+    .left-column {
+        page-break-inside: avoid;
+        page-break-after: auto;
+    }
+
+    .right-column {
+        page-break-inside: auto;
+    }
+
+    /* Control específico para 2 páginas */
+    .section:nth-child(2) {
+        page-break-after: always;
+    }
+
+    /* Asegurar que no se pase de 2 páginas */
+    .section:nth-child(n+4) {
+        font-size: 0.6rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .section:nth-child(n+4) .section-title {
+        font-size: 0.7rem;
+        margin-bottom: 0.2rem;
+    }
+
     .left-column {
         background: #e6b17a !important;
         -webkit-print-color-adjust: exact !important;
         color-adjust: exact !important;
         print-color-adjust: exact !important;
-        padding: 0.5rem 0.4rem;
+        padding: 0.8rem 0.6rem;
         color: #fff !important;
     }
 
     .right-column {
-        padding: 0.5rem 0.4rem;
+        padding: 0.8rem 0.6rem;
     }
 
     .print-button,
@@ -471,13 +497,13 @@ body {
     }
 
     .section {
-        margin-bottom: 0.4rem;
-        page-break-inside: auto;
+        margin-bottom: 0.7rem;
+        page-break-inside: avoid;
     }
 
     .section-title {
-        font-size: 0.85rem;
-        margin-bottom: 0.5rem;
+        font-size: 0.8rem;
+        margin-bottom: 0.4rem;
         color: #000 !important;
     }
 
@@ -491,60 +517,60 @@ body {
     }
 
     .profile-photo-4x4 img {
-        width: 120px;
-        height: 120px;
+        width: 110px;
+        height: 110px;
     }
 
     .name {
-        font-size: 1.6rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 0.4rem;
         line-height: 1.1;
     }
 
     .professional-title h2 {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         margin-bottom: 0.3rem;
     }
 
     .professional-title p {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 
     .contact-item {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         margin-bottom: 0.3rem;
-        gap: 0.3rem;
+        gap: 0.2rem;
     }
 
     .education-item,
     .experience-item {
         margin-bottom: 0.5rem;
-        page-break-inside: auto;
+        page-break-inside: avoid;
     }
 
     .degree,
     .job-title {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 
     .period {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
     }
 
     .institution,
     .company,
     .title {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 
     .achievements li {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         margin-bottom: 0.1rem;
         line-height: 1.2;
     }
 
     .skill-item {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         margin-bottom: 0.2rem;
     }
 
@@ -553,11 +579,11 @@ body {
     }
 
     .language-name {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 
     .language-level {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
     }
 
     /* Ensure colors are preserved */
@@ -582,6 +608,9 @@ body {
 .pdf-mode .container {
     background: white !important;
     box-shadow: none !important;
+    max-height: 297mm;
+    /* Altura máxima de A4 */
+    overflow: hidden;
 }
 
 .pdf-mode .print-button {
@@ -590,6 +619,16 @@ body {
 
 .pdf-mode .footer {
     display: none !important;
+}
+
+/* Forzar 2 páginas en PDF */
+.pdf-mode .section:nth-child(3) {
+    page-break-before: always;
+}
+
+.pdf-mode .section:nth-child(n+4) {
+    font-size: 0.6rem !important;
+    margin-bottom: 0.2rem !important;
 }
 
 /* Animation for smooth loading */

@@ -28,24 +28,52 @@ const CV_CONFIG = {
             company: "La Juvenil - Casa Gastronómica de Pastas",
             period: "Abril 2021 - Actualidad",
             achievements: [
-                "Gestión de proveedores, caja y stock",
-                "Capacitación y selección de personal"
+                "Pago a proveedores y manejo de caja",
+                "Control de stock e inventarios",
+                "Manejo de ficha de personal",
+                "Capacitación y selección de personal",
+                "Resolución de conflictos",
+                "Socia Responsable Victoria: 1569800376"
             ]
         },
         {
-            title: "Especialista en Gastronomía",
-            company: "Compass Group - Movistar Arena",
-            period: "Nov 2019 - Feb 2020",
+            title: "Especialistas en Gastronomía de Eventos",
+            company: "Compass Group - Predio Movistar Arena",
+            period: "Noviembre 2019 - Febrero 2020",
             achievements: [
-                "Atención VIP y control de inventario"
+                "Atención al público en concesiones del estadio",
+                "Camarera en sector VIP",
+                "Control de stock y manejo de inventario",
+                "Cajera",
+                "Teléfonos: 40066600"
             ]
         },
         {
-            title: "Operadora de Seguridad",
-            company: "Municipalidad de Vicente López",
-            period: "Nov 2013 - Ene 2019",
+            title: "Municipalidad de Vicente López",
+            company: "Operadora de sector de alarmas de seguridad",
+            period: "Noviembre 2013 - Enero 2019",
             achievements: [
-                "Atención de emergencias y coordinación"
+                "Atención de llamadas de emergencia",
+                "Resolución de conflictos",
+                "Manejo de sistema de alarmas vecinales",
+                "Manejo de lector de patentes vehiculares",
+                "Supervisora de macaras de seguridad de la vía pública",
+                "Dirección: Maipú 2609, Olivos",
+                "Teléfono: 47112800"
+            ]
+        },
+        {
+            title: "Pastas Elbita",
+            company: "Especialista en gastronomía",
+            period: "Abril 2009 - Abril 2013",
+            achievements: [
+                "Atención al público",
+                "Atención telefónica",
+                "Atención de proveedores",
+                "Facturación y pagos",
+                "Coordinación de servicio delivery",
+                "Dirección: Córdoba 769, Martínez",
+                "Teléfono: 47937835 - Mariana Fracaro"
             ]
         }
     ],
@@ -55,22 +83,34 @@ const CV_CONFIG = {
     // ========================================
     education: [
         {
-            degree: "Licenciatura en Trabajo Social",
-            institution: "UCU - Universidad de Concepción del Uruguay",
+            degree: "Licenciatura en Curso de Trabajador Social",
+            institution: "UCU (Universidad de Concepción del Uruguay)",
             period: "En proceso",
-            title: "Modalidad Virtual"
+            title: "Modalidad: Virtual - Se adeudan 6 materias y la tesis"
         },
         {
             degree: "Técnico Superior en Trabajo Social",
             institution: "Instituto Superior de Ciencias Humanas y Sociales",
             period: "2016 - 2019",
-            title: "CABA"
+            title: "Carrera Terciaria - Dirección: Bartolomé Mitre 3590, CABA"
         },
         {
-            degree: "Bachiller en Comunicación",
+            degree: "Secundario",
             institution: "Escuela Polivalente de Arte, Martínez",
             period: "1996 - 2000",
-            title: "Especialización en Medios"
+            title: "Bachiller en Ciencias de la Comunicación y Medios"
+        },
+        {
+            degree: "Recursos Humanos",
+            institution: "Manejo de personal, Selección de personal y legajos",
+            period: "2018",
+            title: "Dictado por la Municipalidad de Vicente López"
+        },
+        {
+            degree: "Ceremonial y Protocolo",
+            institution: "",
+            period: "2017",
+            title: "Dictado por la Municipalidad de Vicente López"
         }
     ],
 
@@ -81,7 +121,8 @@ const CV_CONFIG = {
         "Personales": [
             "Buenas relaciones interpersonales",
             "Escucha activa",
-            "Capacidad organizativa",
+            "Capacidad organizativa de trabajo grupal",
+            "Permanente colaboración y disposición",
             "Pro-activa"
         ]
     },
@@ -91,6 +132,7 @@ const CV_CONFIG = {
     // ========================================
     personalActivities: [
         "Canto",
+        "Principiante en realización de alimentos sin TACC",
         "Organizadora de Eventos Culturales",
         "Esteticista recibida"
     ],
@@ -112,7 +154,8 @@ const CV_CONFIG = {
     computerSkills: [
         "Windows",
         "Microsoft Office: Excel - Word",
-        "Organización administrativa"
+        "Organización administrativa",
+        "Redes sociales"
     ],
 
 

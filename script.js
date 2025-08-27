@@ -58,7 +58,7 @@ function populateCV() {
     // Set photo src, but handle potential file:// issues
     const photoElement = document.getElementById('profile-photo');
     const photoSrc = cvData.personal.photo;
-    
+
     // Only set src if it's not a file:// URL or if we're not in a file context
     if (!photoSrc.startsWith('file://') && photoSrc !== '') {
         photoElement.src = photoSrc;
@@ -90,7 +90,7 @@ function populateCV() {
 function populateExperience() {
     const experienceList = document.getElementById('experience-list');
     experienceList.innerHTML = '';
-    
+
     cvData.experience.forEach(exp => {
         const item = document.createElement('div');
         item.className = 'experience-item';
@@ -300,7 +300,7 @@ function showNotification(message) {
 function downloadAsPDF() {
     // Ensure all content is loaded first
     populateCV();
-    
+
     // Add a class to optimize for PDF generation
     document.body.classList.add('pdf-mode');
 
@@ -335,7 +335,7 @@ function downloadAsPDF() {
         `);
         printWindow.document.close();
         printWindow.focus();
-        
+
         setTimeout(() => {
             printWindow.print();
             printWindow.close();
