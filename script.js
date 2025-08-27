@@ -310,18 +310,48 @@ function downloadAsPDF() {
         printButton.style.display = 'none';
     }
 
-    // Wait a bit more to ensure all content is rendered
-    setTimeout(() => {
-        window.print();
-
-        // Restore after print dialog
+    // Configure window for print without headers/footers
+    const printWindow = window.open('', '_blank');
+    if (printWindow) {
+        printWindow.document.write(`
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>CV-Alejandra-Veronica-Nunez</title>
+                <link rel="stylesheet" href="styles.css">
+                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+                <style>
+                    @page { margin: 0.4in 0.3in 0.3in 0.3in; }
+                    @media print {
+                        html, body { margin: 0; padding: 0; }
+                    }
+                </style>
+            </head>
+            <body>
+                ${document.querySelector('.container').outerHTML}
+            </body>
+            </html>
+        `);
+        printWindow.document.close();
+        printWindow.focus();
+        
         setTimeout(() => {
-            document.body.classList.remove('pdf-mode');
-            if (printButton) {
-                printButton.style.display = 'flex';
-            }
-        }, 1000);
-    }, 500);
+            printWindow.print();
+            printWindow.close();
+        }, 500);
+    } else {
+        // Fallback to regular print
+        window.print();
+    }
+
+    // Restore after print dialog
+    setTimeout(() => {
+        document.body.classList.remove('pdf-mode');
+        if (printButton) {
+            printButton.style.display = 'flex';
+        }
+    }, 1000);
 }
 
 // Standard print function

@@ -28,10 +28,8 @@ const CV_CONFIG = {
             company: "La Juvenil - Casa Gastronómica de Pastas",
             period: "Abril 2021 - Actualidad",
             achievements: [
-                "Gestión de proveedores y caja",
-                "Control de stock e inventarios", 
-                "Capacitación y selección de personal",
-                "Resolución de conflictos"
+                "Gestión de proveedores, caja y stock",
+                "Capacitación y selección de personal"
             ]
         },
         {
@@ -39,8 +37,7 @@ const CV_CONFIG = {
             company: "Compass Group - Movistar Arena",
             period: "Nov 2019 - Feb 2020",
             achievements: [
-                "Atención VIP y público general",
-                "Control de inventario y caja"
+                "Atención VIP y control de inventario"
             ]
         },
         {
@@ -48,9 +45,7 @@ const CV_CONFIG = {
             company: "Municipalidad de Vicente López",
             period: "Nov 2013 - Ene 2019",
             achievements: [
-                "Atención de emergencias",
-                "Supervisión de sistemas de seguridad",
-                "Coordinación operativa"
+                "Atención de emergencias y coordinación"
             ]
         }
     ],
@@ -76,12 +71,6 @@ const CV_CONFIG = {
             institution: "Escuela Polivalente de Arte, Martínez",
             period: "1996 - 2000",
             title: "Especialización en Medios"
-        },
-        {
-            degree: "Recursos Humanos",
-            institution: "Municipalidad de Vicente López",
-            period: "2018",
-            title: "Certificación en manejo y selección de personal"
         }
     ],
 
@@ -92,8 +81,7 @@ const CV_CONFIG = {
         "Personales": [
             "Buenas relaciones interpersonales",
             "Escucha activa",
-            "Capacidad organizativa de trabajo grupal",
-            "Permanente colaboración y disposición",
+            "Capacidad organizativa",
             "Pro-activa"
         ]
     },
@@ -103,7 +91,6 @@ const CV_CONFIG = {
     // ========================================
     personalActivities: [
         "Canto",
-        "Principiante en realización de alimentos sin TACC",
         "Organizadora de Eventos Culturales",
         "Esteticista recibida"
     ],
@@ -125,8 +112,7 @@ const CV_CONFIG = {
     computerSkills: [
         "Windows",
         "Microsoft Office: Excel - Word",
-        "Organización administrativa",
-        "Redes sociales"
+        "Organización administrativa"
     ],
 
 
