@@ -123,8 +123,8 @@ function populateSkills() {
     softSkills.innerHTML = '';
 
     // Technical Skills
-    if (cvData.skills.technical) {
-        cvData.skills.technical.forEach(skill => {
+    if (cvData.skills["Técnicas"]) {
+        cvData.skills["Técnicas"].forEach(skill => {
             const skillItem = document.createElement('span');
             skillItem.className = 'skill-item';
             skillItem.textContent = skill;
@@ -133,8 +133,8 @@ function populateSkills() {
     }
 
     // Soft Skills
-    if (cvData.skills.soft) {
-        cvData.skills.soft.forEach(skill => {
+    if (cvData.skills["Personales"]) {
+        cvData.skills["Personales"].forEach(skill => {
             const skillItem = document.createElement('span');
             skillItem.className = 'skill-item';
             skillItem.textContent = skill;
