@@ -36,7 +36,7 @@ const CV_CONFIG = {
                 "Capacitación de personal a cargo",
                 "Selección de personal",
                 "Resolución de conflictos",
-                "Responsable Victoria: 1569800376"
+                "Socia Responsable Victoria: 1569800376"
             ]
         },
         {
