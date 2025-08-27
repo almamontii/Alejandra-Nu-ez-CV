@@ -168,7 +168,9 @@ const CV_CONFIG = {
     // ========================================
     computerSkills: [
         "Windows",
-        "Microsoft Office: Excel - Word"
+        "Microsoft Office: Excel - Word",
+        "Organización administrativa",
+        "Redes sociales"
     ],
 
     // ========================================
