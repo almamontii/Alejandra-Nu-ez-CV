@@ -155,7 +155,13 @@ const CV_CONFIG = {
     // ========================================
     // IDIOMAS
     // ========================================
-    languages: [],
+    languages: [
+        {
+            name: "Portugués",
+            level: "A1 - Básico",
+            institution: "Instituto Amarelinha"
+        }
+    ],
 
     // ========================================
     // CERTIFICACIONES

@@ -162,6 +162,7 @@ function populateLanguages() {
         item.innerHTML = `
             <span class="language-name">${lang.name}</span>
             <span class="language-level">${lang.level}</span>
+            ${lang.institution ? `<span class="language-institution">${lang.institution}</span>` : ''}
         `;
         languagesList.appendChild(item);
     });
