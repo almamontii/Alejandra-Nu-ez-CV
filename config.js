@@ -35,7 +35,8 @@ const CV_CONFIG = {
                 "Manejo de ficha de personal",
                 "Capacitación de personal a cargo",
                 "Selección de personal",
-                "Resolución de conflictos"
+                "Resolución de conflictos",
+                "Responsable Victoria: 1569800376"
             ]
         },
         {
