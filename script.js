@@ -116,21 +116,9 @@ function populateEducation() {
 
 // Populate Skills Section
 function populateSkills() {
-    const technicalSkills = document.getElementById('technical-skills');
     const softSkills = document.getElementById('soft-skills');
 
-    technicalSkills.innerHTML = '';
     softSkills.innerHTML = '';
-
-    // Technical Skills
-    if (cvData.skills["Técnicas"]) {
-        cvData.skills["Técnicas"].forEach(skill => {
-            const skillItem = document.createElement('span');
-            skillItem.className = 'skill-item';
-            skillItem.textContent = skill;
-            technicalSkills.appendChild(skillItem);
-        });
-    }
 
     // Soft Skills
     if (cvData.skills["Personales"]) {
