@@ -54,7 +54,7 @@ const CV_CONFIG = {
         {
             title: "Municipalidad de Vicente López",
             company: "Operadora de sector de alarmas de seguridad",
-            period: "",
+            period: "Noviembre 2013 - Enero 2019",
             achievements: []
         }
     ],
