@@ -55,7 +55,15 @@ const CV_CONFIG = {
             title: "Municipalidad de Vicente López",
             company: "Operadora de sector de alarmas de seguridad",
             period: "Noviembre 2013 - Enero 2019",
-            achievements: []
+            achievements: [
+                "Atención de llamadas de emergencia",
+                "Resolución de conflictos",
+                "Manejo de sistema de alarmas vecinales",
+                "Manejo de lector de patentes vehiculares",
+                "Supervisora de macaras de seguridad de la vía pública",
+                "Dirección: Maipú 2609, Olivos",
+                "Teléfono: 47112800"
+            ]
         }
     ],
 
