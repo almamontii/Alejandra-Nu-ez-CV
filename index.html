@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Left Column -->
+        <div class="left-column">
+            <!-- Profile Photo 4x4 -->
+            <div class="profile-photo-4x4">
+                <img src="PHOTO-Ale.jpg" alt="Foto de Alejandra Veronica Nuñez" id="profile-photo">
+            </div>
+
+            <!-- Name -->
+            <h1 class="name" id="full-name">Alejandra Veronica Nuñez</h1>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span id="phone">+54 9 11 5311-2277</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:veronicanunez466@gmail.com" id="email">veronicanunez466@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-birthday-cake"></i>
+                    <span id="birthdate">Fecha Nacimiento: 30/10/1983</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span id="address">Dirección: Vicente López, Olivos</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-id-card"></i>
+                    <span id="dni">DNI: 30440908</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-heart"></i>
+                    <span id="marital-status">Estado Civil: Soltera</span>
+                </div>
+            </div>
+
+            <!-- Professional Title -->
+            <div class="professional-title">
+                <h2 id="job-title">Técnico en Trabajo Social</h2>
+                <p id="subtitle">Especialista en Intervención Social</p>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+
+
+            <!-- Education Section -->
+            <section class="section">
+                <h3 class="section-title">Educación</h3>
+                <div class="education-list" id="education-list">
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="section">
+                <h3 class="section-title">Experiencia</h3>
+                <div class="experience-list" id="experience-list">
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="section">
+                <h3 class="section-title">Habilidades</h3>
+                <div class="skills-container">
+                    <div class="skills-column">
+                        <h4>Técnicas</h4>
+                        <div class="skills-list" id="technical-skills">
+                        </div>
+                    </div>
+                    <div class="skills-column">
+                        <h4>Personales</h4>
+                        <div class="skills-list" id="soft-skills">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Languages Section -->
+            <section class="section">
+                <h3 class="section-title">Idiomas</h3>
+                <div class="languages-list" id="languages-list">
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <span class="footer-text">;)</span>
+    </div>
+
+    <!-- Print Button -->
+    <div class="print-button">
+        <button onclick="window.print()" class="btn-print">
+            <i class="fas fa-print"></i>
+            Imprimir
+        </button>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
