@@ -166,7 +166,10 @@ const CV_CONFIG = {
     // ========================================
     // INFORMÁTICA
     // ========================================
-    computerSkills: [],
+    computerSkills: [
+        "Windows",
+        "Microsoft Office: Excel - Word"
+    ],
 
     // ========================================
     // CERTIFICACIONES
