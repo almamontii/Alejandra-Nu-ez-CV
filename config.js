@@ -134,7 +134,12 @@ const CV_CONFIG = {
     // ========================================
     skills: {
         "Técnicas": [],
-        "Personales": []
+        "Personales": [
+            "Canto",
+            "Esteticista recibida",
+            "Principiante en realización de alimentos sin TACC",
+            "Organizadora de Eventos Culturales"
+        ]
     },
 
     // ========================================
