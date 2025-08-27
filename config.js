@@ -37,6 +37,12 @@ const CV_CONFIG = {
                 "Selección de personal",
                 "Resolución de conflictos"
             ]
+        },
+        {
+            title: "",
+            company: "Compass Group - Predio Movistar Arena",
+            period: "Noviembre 2019 - Febrero 2020",
+            achievements: []
         }
     ],
 
