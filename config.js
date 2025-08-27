@@ -75,7 +75,8 @@ const CV_CONFIG = {
                 "Atención de proveedores",
                 "Facturación y pagos",
                 "Coordinación de servicio delivery",
-                "Dirección: Córdoba 769, Martínez"
+                "Dirección: Córdoba 769, Martínez",
+                "Teléfono: 47937835 - Mariana Fracaro"
             ]
         }
     ],
