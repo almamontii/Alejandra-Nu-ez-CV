@@ -133,7 +133,13 @@ const CV_CONFIG = {
     // HABILIDADES TÉCNICAS
     // ========================================
     skills: {
-        "Técnicas": [],
+        "Técnicas": [
+            "Buenas relaciones interpersonales",
+            "Escucha activa",
+            "Capacidad organizativa de trabajo grupal",
+            "Permanente colaboración y disposición",
+            "Pro-activa"
+        ],
         "Personales": [
             "Canto",
             "Principiante en realización de alimentos sin TACC",
