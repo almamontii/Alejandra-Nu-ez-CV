@@ -68,7 +68,7 @@ const CV_CONFIG = {
         {
             title: "Pastas Elbita",
             company: "Especialista en gastronomía",
-            period: "",
+            period: "Abril 2009 - Abril 2013",
             achievements: []
         }
     ],
